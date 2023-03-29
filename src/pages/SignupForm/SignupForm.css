@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+.SignupContainer {
+   margin: 15rem auto;
+   width: 30%;
+   border-width: 50px;
+}
+
+.SignupForm {
+   box-sizing: border-box;
+   margin: auto;
+}
+
+.SignupLabel {
+   font-size: 1.2em;
+}
+
+.SignupInput {
+   display: block;
+   height: 2em;
+   padding: 10px;
+   border-radius: 5px;
+   width: 100%;
+   margin-bottom: 1.5em;
+}
+
+.SignupButton {
+   height: 3em;
+   width: 8em;
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 1em;
+   margin-top: 5px;
+   border-radius: 5px;
+}
+
+/* .SignupLabel {
+   display: block;
+   margin-top: 10px;
+   margin-bottom: 5px;
+} */

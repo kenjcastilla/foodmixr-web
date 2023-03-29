@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+.Hero {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      /* background: rgb(255, 228, 155); */
+      background: rgb(2,0,36);
+      background: linear-gradient(90deg, 
+                  rgba(2,0,36,1) 10%, 
+                  rgb(104, 157, 195) 50%, 
+                  rgb(255, 211, 134) 85%);
+      height: 35%;
+      width: 59.9%;
+      padding: 20% 20%;
+      color: white;
+      position: absolute;
+      align-items: center;
+}
+
+.HomeHeaderContainer {
+      display: flex;
+      width: 80%;
+      align-items: center;
+      position: absolute;
+      margin-bottom: 1em;
+}
+
+.HomeHeader {
+      font-size: 110px;
+      width: 100%;
+      position: absolute;
+      text-align: center;
+      color: black;
+}
+
+/* .HomeInput {
+      width: 9em;
+      height: 3em;
+      border-radius: 10%;
+      margin-bottom: 1em;
+      margin-right: 1em;
+} */
+
+.HomeButtonsContainer {
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      width: 50%;
+      height: auto;
+      align-items: center;
+      padding: 10%;
+}
+
+.HomeButton {
+      height: 2em;
+      width: 35%;
+      border: hidden;
+      border-radius: 0.5em;
+      margin: auto;
+      font-size: 2em;
+      font-family: 'Josefin Sans', sans-serif;
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+.LoginContainer {
+   margin: 15rem auto;
+   width: 30%;
+   border-width: 50px;
+}
+
+.LoginForm {
+   box-sizing: border-box;
+   margin: auto;
+}
+
+.LoginLabel {
+   font-size: 1.5em;
+}
+
+.LoginInput {
+   display: block;
+   height: 2em;
+   padding: 10px;
+   border-radius: 5px;
+   width: 100%;
+   margin-bottom: 2em;
+}
+
+.LoginButton {
+   height: 3em;
+   width: 8em;
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 1em;
+   margin-top: 5px;
+   border-radius: 5px;
+}
+/* label {
+   display: block;
+   margin-top: 10px;
+   margin-bottom: 5px;
+} */
