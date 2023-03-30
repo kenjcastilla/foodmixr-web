@@ -22,24 +22,10 @@ function useProvideAuth() {
    const [isLoading, setIsLoading] = useState(true);
    const [user, setUser] = useState(null);
    const [userId, setUserId] = useState("");
-   //const [userCode, setUserCode] = useState("");
    const { firebase } = useContext(FirebaseContext);
 
    // Wrap any Firebase methods we want to use making sure ...
    // ... to save the user to state.
-   // const helpSetUserCode = async (uid) => {
-   //    const docRef = doc(db, "users", uid);
-   //    console.log(docRef);
-   //    const snapshot = await getDoc(docRef)
-   //       .then((snapshot) => {
-   //          const docData = snapshot.data();
-   //          const fields = JSON.parse(JSON.stringify(docData));
-   //          const code = fields.code;
-   //          setUserCode(code);
-   //       });
-   //    console.log(`Code from local state after setUserCode(code): ${userCode}`);
-   // };
-
    const signin = ({ email, password, callback }) => {
       return firebase
          .auth()
@@ -47,7 +33,6 @@ function useProvideAuth() {
          .then((response) => {
             setUser(response.user);
             setUserId(response.user.uid);
-            //helpSetUserCode(response.user.uid);
             callback();
             return response.user;
          });

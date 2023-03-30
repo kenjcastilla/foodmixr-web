@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { LOGIN, SIGN_UP, SIGN_OUT, SPOTIFY_LOGIN } from "../../constants/routes";
 import { useAuth } from "../../context/AuthContext";
-import SetCurrentTrack from "../../spotify/SetCurrentTrack";
 import "./Home.css"
 
 const validateCode = (code) => {
@@ -20,11 +19,6 @@ const Home = () => {
    const auth = useAuth();
    const navigate = useNavigate();
 
-   //   useEffect(() => {
-   //       if (JSON.stringify(localStorage.getItem("spotifyToken"))) {
-   //          SetCurrentTrack();
-   //       } 
-   //    });
    const redirect = (destination) => {
       switch (destination) {
          case "Signup":
@@ -60,26 +54,6 @@ const Home = () => {
                </>
             }
          </div>
-         {/* <form onSubmit={(event) => {
-            event.preventDefault();
-            if (validateCode(code)) {
-               navigate(`songdisplay/${code}`);
-            }
-            else {
-               alert("Invalid code!");
-            }
-            setCode("");
-         }}
-         >
-            <input
-               className="HomeInput"
-               type="password"
-               placeholder="Code"
-               value={code}
-               onChange={(event) => setCode(event.target.value)}
-            />
-            <button className="HomeButton" type="submit">Enter</button>
-         </form> */}
       </div >
    );
 };
