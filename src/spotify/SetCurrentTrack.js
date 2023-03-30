@@ -6,7 +6,6 @@ import { useAuth } from "../context/AuthContext";
 import axios from "axios";
 import { SPOTIFY_LOGIN } from "../constants/routes";
 
-//making sure tracking upstream
 const CURRENT_TRACK_ENDPOINT = "https://api.spotify.com/v1/me/player/currently-playing";
 
 const SetCurrentTrack = () => {
