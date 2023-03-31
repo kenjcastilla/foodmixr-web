@@ -49,7 +49,8 @@ const SetCurrentTrack = () => {
          return arr;
       }, []);
       console.log(artists);
-
+      // localStorage.setItem("title", title);
+      // localStorage.setItem("artists", artists);
       console.log("setTrackInFirestore initiated...")
       const toUpdate = {
          album: album,
@@ -66,7 +67,8 @@ const SetCurrentTrack = () => {
             return timeLeft;
          })
          .catch(error => { console.log(error); })
-      return timeLeft;
+      // return timeLeft;
+
    };
 
    useEffect(() => {
@@ -77,10 +79,12 @@ const SetCurrentTrack = () => {
 
    });
    return (
-      <h1 style={{ marginTop: '5em', textAlign: 'center', fontSize: 45 }}>
+      <>
+      <h1 style={{ width: '75%', margin: 'auto', marginTop: '6em', textAlign: 'center', fontSize: 40 }}>
          You are currently sharing your playback with others!
          <br />Leaving this page will cease updating your viewers on what you're listening to.
       </h1>
+      </>
 
    );
 }
